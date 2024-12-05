@@ -1,0 +1,38 @@
+.mexican-details-container {
+    padding: 20px;
+    font-family: "Playfair Display", serif;
+  }
+  
+  .card {
+    margin: auto;
+    max-width: 800px;
+    border: 1px solid #d32f2f; /* Mexican red border */
+    border-radius: 10px;
+  }
+  
+  .card-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #d32f2f; /* Mexican red */
+  }
+  
+  .card-text {
+    font-size: 1.2rem;
+    color: #333;
+  }
+  
+  ul,
+  ol {
+    padding-left: 20px;
+    color: #555;
+  }
+  
+  .btn-primary {
+    background-color: #d32f2f;
+    border: none;
+  }
+  
+  .btn-primary:hover {
+    background-color: #a31414;
+  }
+  

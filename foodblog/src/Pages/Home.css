@@ -1,0 +1,206 @@
+/* General Styling */
+body {
+  font-family: "Playfair Display", serif;
+  line-height: 1.6;
+  background-color: #ffffff; /* White background for a clean look */
+  color: #333333; /* Dark gray text */
+  margin: 0;
+  padding: 0;
+}
+
+/* Carousel Section */
+.carousel-section .carousel-item img {
+  height: 500px;
+  object-fit: cover;
+}
+
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.6); /* Semi-transparent black background */
+  color: #ffffff; /* White text */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.carousel-caption h3 {
+  font-family: "Playfair Display", serif;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.carousel-caption p {
+  font-size: 1.2rem;
+}
+
+/* About Us Section Styling */
+.about-section {
+  background-color: #f8f9fa; /* Light background */
+  padding: 40px 20px;
+  border-radius: 10px;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #6a1b9a; /* Purple */
+}
+
+.section-description {
+  font-size: 1rem;
+  color: #6a1b9a;
+  margin-bottom: 30px;
+}
+
+.team-member-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-member-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Let's Start Section */
+.lets-start-section {
+  padding: 50px 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+}
+
+.lets-start-section h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #6a1b9a;
+}
+
+.lets-start-section h4 {
+  font-size: 1.5rem;
+  font-style: italic;
+  color: #6c757d; /* Muted gray */
+}
+
+/* Shop Section */
+.shop-section {
+  padding: 50px 20px;
+  background-color: #f8f8f8;
+  border-radius: 10px;
+}
+
+.shop-section img {
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.shop-section h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333333;
+}
+
+.shop-section p {
+  font-size: 1rem;
+  color: #6c757d;
+  margin-top: 10px;
+}
+
+.shop-section .btn-lg {
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.shop-section .btn-lg:hover {
+  background-color: #505050; /* Darker gray */
+  color: #ffffff;
+}
+
+/* Newsletter Section */
+.newsletter-section {
+  background-color: #f9f9f9; /* Light background */
+  padding: 40px 20px;
+  border-radius: 10px;
+  margin: 40px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.newsletter-section h2 {
+  font-family: "Playfair Display", serif;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #6a1b9a; /* Purple */
+}
+
+.newsletter-section p {
+  color: #6c757d; /* Muted gray */
+  margin-bottom: 20px;
+}
+
+.newsletter-form input {
+  height: 45px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding: 0 10px;
+}
+
+.newsletter-form input::placeholder {
+  color: #888888; /* Light gray placeholder */
+}
+
+.newsletter-form .btn-primary {
+  background-color: #6a1b9a; /* Purple */
+  border: none;
+  height: 45px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.newsletter-form .btn-primary:hover {
+  background-color: #50187a; /* Darker purple */
+}
+
+.text-success {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #28a745; /* Green success text */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .carousel-section .carousel-item img {
+    height: 300px;
+  }
+
+  .carousel-caption h3 {
+    font-size: 1.5rem;
+  }
+
+  .carousel-caption p {
+    font-size: 1rem;
+  }
+
+  .lets-start-section h2,
+  .shop-section h2,
+  .newsletter-section h2 {
+    font-size: 1.8rem;
+  }
+
+  .shop-section img {
+    max-height: 300px;
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 576px) {
+  .newsletter-form .form-row > * {
+    margin-bottom: 10px;
+  }
+
+  .newsletter-form .form-row > .col-md-4,
+  .newsletter-form .form-row > .col-md-2 {
+    width: 100%;
+  }
+
+  .newsletter-form .btn-primary {
+    width: 100%;
+  }
+}

@@ -1,0 +1,80 @@
+/* IndianRecipeDetails.js Specific Styles */
+
+/* Recipe Details Page Styling */
+.recipe-details-container {
+    margin-top: 20px;
+    font-family: "Playfair Display", serif;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.recipe-details-container h5 {
+    font-size: 1.3rem;
+    color: #ff7043; /* Orange text for headings */
+    margin-top: 20px;
+}
+
+.recipe-details-container ul, 
+.recipe-details-container ol {
+    margin-left: 20px;
+    color: #333333;
+}
+
+.recipe-details-container li {
+    margin-bottom: 10px;
+}
+
+.recipe-details-container img {
+    border-radius: 10px;
+    width: 100%; /* Full width */
+    max-height: 400px; /* Limit height */
+    object-fit: cover; /* Ensure proper scaling */
+    border: 2px solid #ff7043; /* Add a border to match theme */
+}
+
+.recipe-details-container .card-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ff7043; /* Orange text */
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.recipe-details-container .card-text {
+    font-size: 1.2rem;
+    color: #666666;
+    text-align: center;
+}
+
+.recipe-details-container .back-button {
+    background-color: #ff7043;
+    border: none;
+    font-family: "Playfair Display", serif;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    color: #fff;
+    text-decoration: none;
+}
+
+.recipe-details-container .back-button:hover {
+    background-color: #e64a19;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .recipe-details-container img {
+        max-height: 300px; /* Adjust image height for smaller screens */
+    }
+
+    .recipe-details-container h5 {
+        font-size: 1.1rem;
+    }
+}
