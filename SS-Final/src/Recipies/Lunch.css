@@ -1,0 +1,84 @@
+/* General Container Styling */
+.container {
+  font-family: "Playfair Display", serif;
+  padding:  "10px"
+}
+ 
+/* Header Section Styling */
+.title-section {
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 100px;
+  background: #6a1b9a; /* Gradient for the header */
+  color: #fff; /* White text for better contrast */
+  border-radius: 10px;
+  height: 20px;
+}
+ 
+ 
+.title-section h1 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #ffffff;
+}
+ 
+.title-section p {
+  font-size: 18px;
+  color: #e0d7f7;
+  margin-top: 10px;
+}
+ 
+/* Card Styling */
+.card {
+  border: 1px solid #6a1b9a; /* Purple border */
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+ 
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+ 
+.card-title {
+  font-family: "Playfair Display", serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: #6a1b9a; /* Purple color */
+  text-align: center; /* Center-align the title */
+}
+ 
+.card-text {
+  font-size: 14px;
+  color: #6a1b9a; /* Purple color for text */
+  text-align: center; /* Center-align the text */
+}
+ 
+.img-fluid {
+  border-radius: 10px 10px 0 0;
+}
+ 
+/* Button Styling */
+.btn-primary {
+  background-color: #6a1b9a; /* Purple button */
+  border: none;
+  font-family: "Playfair Display", serif;
+  display: block;
+  margin: 0 auto; /* Center-align the button */
+  padding: 10px 20px;
+}
+ 
+.btn-primary:hover {
+  background-color: #50187a; /* Darker purple on hover */
+}
+ 
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .header-section h1 {
+    font-size: 2.5rem;
+  }
+ 
+  .card-title {
+    font-size: 18px;
+  }
+}

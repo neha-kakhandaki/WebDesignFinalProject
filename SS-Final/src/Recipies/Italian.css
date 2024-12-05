@@ -1,0 +1,136 @@
+/* General Container Styling */
+.container {
+  font-family: "Playfair Display", serif;
+  padding: 20px;
+}
+ 
+/* Header Section Styling */
+.header-section {
+  background-color: #6a1b9a !important;/* Purple background */
+  color: #ffffff; /* White text */
+  padding: 10px 20px;
+  text-align: center;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  height: auto;
+ 
+}
+ 
+.header-section h1 {
+  font-family: "Playfair Display", serif;
+  font-weight: bold;
+  font-size: 3rem; /* Larger heading size */
+  color: #ffffff; /* White text for heading */
+  margin-bottom: 10px;
+}
+ 
+.header-section p {
+  font-size: 1.2rem;
+  color: #ffffff; /* White text for subheading */
+  margin-top: 10px;
+}
+ 
+ 
+/* Subheading Section */
+.subheading-section {
+  background-color: #ffffff; /* White background */
+  color: #6a1b9a; /* Purple text */
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+ 
+.subheading-section h2 {
+  font-family: "Playfair Display", serif;
+  font-weight: bold;
+  font-size: 2rem; /* Slightly smaller than main heading */
+  color: #6a1b9a; /* Purple color for the text */
+  margin-bottom: 10px;
+}
+ 
+.subheading-section p {
+  font-size: 1.1rem;
+  color: #6a1b9a; /* Purple color */
+}
+ 
+/* Card Styling */
+.card {
+  border: 1px solid #6a1b9a; /* Border in purple */
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+ 
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgb(255, 255, 255);
+}
+ 
+.card-title {
+  font-family: "Playfair Display", serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: #6a1b9a !important; /* Purple color */
+}
+ 
+.card-text {
+  font-size: 14px;
+  color: #6a1b9a !important; /* Purple color for text */
+}
+ 
+.img-fluid {
+  border-radius: 10px 10px 0 0;
+}
+ 
+/* Button Styling */
+.btn-primary {
+  background-color: #6a1b9a; /* Purple button */
+  border: none;
+  font-family: "Playfair Display", serif;
+}
+ 
+.btn-primary:hover {
+  background-color: #50187a; /* Darker purple on hover */
+}
+ 
+/* Accordion Styling */
+.accordion-item {
+  border: 1px solid #6a1b9a; /* Purple border */
+  border-radius: 5px;
+}
+ 
+.accordion-header {
+  font-size: 18px;
+  font-weight: bold;
+  font-family: "Playfair Display", serif;
+  color: #6a1b9a; /* Purple text */
+}
+ 
+.accordion-body {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333333;
+}
+ 
+/* Footer Styling */
+.footer {
+  text-align: center;
+  margin-top: 50px;
+  color: #6a1b9a; /* Purple footer text */
+  font-size: 14px;
+  font-family: "Playfair Display", serif;
+}
+ 
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .header-section h1 {
+      font-size: 2.5rem;
+  }
+  .subheading-section h2 {
+      font-size: 1.8rem;
+  }
+  .card-title {
+      font-size: 18px;
+  }
+}
+ 

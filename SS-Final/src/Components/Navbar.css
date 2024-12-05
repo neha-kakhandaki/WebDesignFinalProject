@@ -1,0 +1,124 @@
+/* Navbar Container */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #f8f9fa;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 2px solid #8b0000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo */
+.navbar .logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #8b0000;
+  font-family: "Georgia", serif;
+}
+
+/* Menu */
+.menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  margin: 0 15px;
+  position: relative;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #333;
+  cursor: pointer;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #333;
+}
+
+.nav-link:hover {
+  color: #8b0000;
+}
+
+/* Dropdown Styling */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  margin-top: 5px;
+  z-index: 1000;
+}
+
+.dropdown-content li {
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.dropdown-content li:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Logout Button */
+.btn-logout {
+  background-color: #dc3545;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn-logout:hover {
+  background-color: #c82333;
+}
+
+/* Hamburger Menu */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.hamburger .line {
+  width: 25px;
+  height: 3px;
+  background-color: #8b0000;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .menu.open {
+    display: flex;
+  }
+
+  .menu li {
+    margin: 10px 0;
+    text-align: center;
+  }
+}

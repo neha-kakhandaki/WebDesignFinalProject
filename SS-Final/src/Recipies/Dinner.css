@@ -1,0 +1,83 @@
+/* General Container Styling */
+.dinner-page {
+  font-family: "Playfair Display", serif;
+  padding: 20px;
+}
+ 
+/* Header Section Styling */
+.header-section {
+  background-color: #6a1b9a; /* Purple background */
+  color: #ffffff; /* White text */
+  padding: 60px 20px;
+  text-align: center;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+ 
+.header-section h1 {
+  font-weight: bold;
+  font-size: 3rem; /* Larger heading size */
+  margin-bottom: 10px;
+}
+ 
+.header-section p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  color: #ffffff; /* White text for subheading */
+}
+ 
+/* Card Styling */
+.card {
+  border: 1px solid #6a1b9a; /* Purple border */
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+ 
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+ 
+.card-title {
+  font-family: "Playfair Display", serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: #6a1b9a; /* Purple color */
+  text-align: center; /* Center-align the title */
+}
+ 
+.card-text {
+  font-size: 14px;
+  color: #6a1b9a; /* Purple color for text */
+  text-align: center; /* Center-align the text */
+}
+ 
+.img-fluid {
+  border-radius: 10px 10px 0 0;
+}
+ 
+/* Button Styling */
+.btn-primary {
+  background-color: #6a1b9a !important;/* Purple button */
+  border: none;
+  font-family: "Playfair Display", serif;
+  display: block;
+  margin: 0 auto; /* Center-align the button */
+  padding: 10px 20px;
+}
+ 
+.btn-primary:hover {
+  background-color: #50187a; /* Darker purple on hover */
+}
+ 
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .header-section h1 {
+    font-size: 2.5rem;
+  }
+ 
+  .card-title {
+    font-size: 18px;
+  }
+}
+ 

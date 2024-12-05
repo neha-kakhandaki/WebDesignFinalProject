@@ -1,0 +1,491 @@
+/* General Styling */
+body {
+  font-family: "Playfair Display", serif;
+  line-height: 1.6;
+  background-color: #ffffff; /* White background for clean look */
+  color: #333333; /* Dark gray text */
+  margin: 0;
+  padding: 0;
+}
+
+/* Carousel Section */
+.carousel-section .carousel-item img {
+  height: 500px;
+  object-fit: cover;
+}
+
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.6); /* Semi-transparent black background */
+  color: #ffffff; /* White text */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.carousel-caption h3 {
+  font-family: "Playfair Display", serif;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.carousel-caption p {
+  font-size: 1.2rem;
+}
+
+
+/* About Section */
+.about-section {
+  background: linear-gradient(135deg, #d8e2dc, #95d5b2); /* Gradient background */
+  padding: 60px 20px;
+  border-radius: 15px;
+}
+
+.about-section .section-title {
+  font-size: 3rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  color: #333;
+  position: relative;
+  display: inline-block;
+}
+
+.about-section .section-title::before,
+.about-section .section-title::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 50px;
+  height: 2px;
+  background: #6a1b9a;
+}
+
+.about-section .section-title::before {
+  left: -60px;
+}
+
+.about-section .section-title::after {
+  right: -60px;
+}
+
+.about-section .section-description {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+/* Team Member Cards */
+.team-member-card {
+  display: flex;
+  align-items: center; /* Vertically align image and text */
+  justify-content: flex-start; /* Align content to the left */
+  gap: 20px; /* Space between the image and text */
+  background: linear-gradient(135deg, #ffffff, #f8f9fa); /* Subtle gradient */
+  color: #333;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 80%;
+}
+
+.team-member-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.team-member-card img {
+  border: 4px solid #6a1b9a;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-member-info {
+  text-align: left; /* Align text to the left */
+}
+
+.team-member-info h5 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #6a1b9a;
+  margin-bottom: 5px;
+}
+
+.team-member-info .role {
+  font-size: 1rem;
+  color: #6c757d;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.team-member-info p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+.team-member-card .btn {
+  background-color: #6a1b9a;
+  color: #fff;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.team-member-card .btn:hover {
+  background-color: #50187a;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .team-member-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .team-member-card {
+    width: 90%;
+  }
+
+  .about-section .section-title {
+    font-size: 2rem;
+  }
+
+  .about-section .section-description {
+    font-size: 1rem;
+  }
+}
+
+/* Let’s Talk Section */
+.lets-start-section {
+  background-color: lightpink; /* Light gray background for contrast */
+  padding: 60px 20px;
+  display: flex;
+  align-items: center;
+}
+
+.lets-start-section .img-fluid {
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Slight shadow for images */
+}
+
+.lets-start-section h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #6a1b9a; /* Purple text */
+  margin-bottom: 20px;
+}
+
+.lets-start-section h4 {
+  font-family: "Playfair Display", serif;
+  font-size: 1.5rem;
+  color: #6c757d; /* Muted gray text */
+  margin-bottom: 15px;
+}
+
+.lets-start-section p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #555555; /* Medium gray text */
+  margin-bottom: 20px;
+}
+
+.lets-start-section em {
+  font-style: italic;
+  color: #6a1b9a; /* Purple emphasis */
+}
+
+/* Team Member Cards */
+.team-member-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.team-member-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #ffffff; /* Pure white background for cards */
+  color: #333333; /* Dark text for contrast */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 80%;
+}
+
+.team-member-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.team-member-card img {
+  border: 3px solid #6a1b9a; /* Purple border for emphasis */
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.team-member-card h5 {
+  color: #6a1b9a; /* Purple text for names */
+  margin-top: 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.team-member-card p {
+  color: #555555; /* Muted gray for descriptions */
+  margin-top: 5px;
+  font-size: 0.9rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .team-member-card {
+    width: 95%; /* Make cards more responsive on smaller screens */
+  }
+
+  .lets-start-section {
+    flex-direction: column;
+    padding: 40px 10px;
+  }
+
+  .lets-start-section img {
+    margin-bottom: 20px;
+  }
+
+  .lets-start-section h2 {
+    font-size: 1.8rem;
+  }
+
+  .lets-start-section h4 {
+    font-size: 1.3rem;
+  }
+
+  .lets-start-section p {
+    font-size: 1rem;
+  }
+}
+
+/* Shop Section */
+.shop-section {
+  padding: 50px 20px;
+  background-color: #f8f8f8;
+  border-radius: 10px;
+}
+
+.shop-section img {
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.shop-section h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333333;
+}
+
+.shop-section p {
+  font-size: 1rem;
+  color: #6c757d;
+  margin-top: 10px;
+}
+
+.shop-section .btn-lg {
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.shop-section .btn-lg:hover {
+  background-color: #505050; /* Darker gray */
+  color: #ffffff;
+}
+
+/* Newsletter Section */
+.newsletter-section {
+  background-color: #f9f9f9; /* Light background */
+  padding: 40px 20px;
+  border-radius: 10px;
+  margin: 40px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.newsletter-section h2 {
+  font-family: "Playfair Display", serif;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #6a1b9a; /* Purple */
+}
+
+.newsletter-section p {
+  color: #6c757d; /* Muted gray */
+  margin-bottom: 20px;
+}
+
+.newsletter-form input {
+  height: 45px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding: 0 10px;
+}
+
+.newsletter-form input::placeholder {
+  color: #888888; /* Light gray placeholder */
+}
+
+.newsletter-form .btn-primary {
+  background-color: #6a1b9a; /* Purple */
+  border: none;
+  height: 45px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.newsletter-form .btn-primary:hover {
+  background-color: #50187a; /* Darker purple */
+}
+
+.text-success {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #28a745; /* Green success text */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .carousel-section .carousel-item img {
+    height: 300px;
+  }
+
+  .carousel-caption h3 {
+    font-size: 1.5rem;
+  }
+
+  .carousel-caption p {
+    font-size: 1rem;
+  }
+
+  .about-section h2 {
+    font-size: 1.8rem;
+  }
+
+  .newsletter-section h2 {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .newsletter-form .form-row > * {
+    margin-bottom: 10px;
+  }
+
+  .newsletter-form .form-row > .col-md-4,
+  .newsletter-form .form-row > .col-md-2 {
+    width: 100%;
+  }
+
+  .newsletter-form .btn-primary {
+    width: 100%;
+  }
+}
+
+/* Contact Us Section */
+.contact-us-section {
+  background-color: #ffffff; /* White background for a clean card look */
+  padding: 40px 20px;
+  border-radius: 15px;
+  margin: 30px auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  max-width: 800px; /* Limit width for a balanced layout */
+  text-align: center;
+}
+
+.contact-us-section h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 2.5rem; /* Larger font size for emphasis */
+  font-weight: bold;
+  color: #6a1b9a; /* Purple text for emphasis */
+  margin-bottom: 20px;
+}
+
+.contact-us-section p {
+  font-size: 1rem;
+  color: #555; /* Medium gray text */
+  margin-bottom: 30px;
+}
+
+.contact-us-section .form-label {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333; /* Dark labels for readability */
+  margin-bottom: 10px;
+}
+
+.contact-us-section .form-control {
+  font-size: 1rem;
+  border: 1px solid #ddd; /* Subtle border */
+  border-radius: 8px; /* Smooth rounded corners */
+  padding: 12px; /* Add padding for larger fields */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-us-section .form-control:focus {
+  border-color: #6a1b9a; /* Purple border on focus */
+  box-shadow: 0 0 8px rgba(106, 27, 154, 0.3); /* Purple glow */
+}
+
+.contact-us-section .btn-primary {
+  font-size: 1.1rem;
+  background: linear-gradient(135deg, #6a1b9a, #8e44ad); /* Gradient for modern button */
+  color: #fff; /* White text */
+  border: none;
+  padding: 12px 25px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 50px; /* Rounded button */
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.contact-us-section .btn-primary:hover {
+  background: linear-gradient(135deg, #50187a, #6a1b9a); /* Darker gradient on hover */
+  transform: translateY(-3px); /* Slight lift effect on hover */
+  box-shadow: 0 4px 10px rgba(106, 27, 154, 0.3); /* Shadow on hover */
+}
+
+.contact-us-section form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Add spacing between form elements */
+}
+
+.contact-us-section .form-control::placeholder {
+  color: #aaa; /* Light gray placeholder */
+  font-style: italic; /* Italic for placeholder text */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .contact-us-section {
+    padding: 30px 15px;
+  }
+
+  .contact-us-section h2 {
+    font-size: 2rem;
+  }
+
+  .contact-us-section p {
+    font-size: 0.95rem;
+  }
+
+  .contact-us-section .btn-primary {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+}
+

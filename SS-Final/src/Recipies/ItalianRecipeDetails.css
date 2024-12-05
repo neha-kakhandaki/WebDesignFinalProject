@@ -1,0 +1,76 @@
+/* General Container Styling */
+.container {
+    font-family: "Playfair Display", serif;
+    padding: 20px;
+  }
+  
+  /* Card Styling */
+  .card {
+    border: 1px solid #6a1b9a; /* Purple border */
+    border-radius: 10px; /* Rounded corners for the card */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Add a soft shadow */
+    overflow: hidden; /* Prevent content overflow */
+    margin-bottom: 20px;
+  }
+  
+  /* Image Styling */
+  .img-fluid {
+    width: 100%; /* Full width */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 400px; /* Restrict maximum height */
+    object-fit: cover; /* Crop and fit the image */
+    border-bottom: 5px solid #6a1b9a; /* Decorative border */
+  }
+  
+  /* Title Styling */
+  .card-title {
+    font-family: "Playfair Display", serif;
+    font-weight: bold;
+    font-size: 1.8rem;
+    color: #6a1b9a; /* Purple text */
+    margin-bottom: 15px;
+  }
+  
+  /* Text Styling */
+  .card-text {
+    font-size: 1.2rem;
+    color: #6a1b9a; /* Purple text */
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  
+  /* Ingredients and Steps Styling */
+  h5 {
+    font-size: 1.5rem;
+    color: #6a1b9a; /* Purple text */
+    margin-top: 20px;
+  }
+  
+  ul, ol {
+    margin-left: 20px;
+    font-size: 1.2rem;
+  }
+  
+  /* Button Styling */
+  .btn-primary {
+    background-color: #6a1b9a; /* Purple */
+    border: none;
+  }
+  
+  .btn-primary:hover {
+    background-color: #50187a; /* Darker purple on hover */
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .img-fluid {
+      max-height: 300px; /* Reduce image height for smaller screens */
+    }
+    .card-title {
+      font-size: 1.5rem;
+    }
+    ul, ol {
+      font-size: 1rem;
+    }
+  }
+  
