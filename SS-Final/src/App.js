@@ -40,7 +40,8 @@ import HomePage from "./Pages/HomePage";
 import FloatingCartButton from "./Components/FloatingCartButton";
 import ManageUsersPage from "./Pages/ManageUsersPage";
 import Footer from "./Components/Footer";
-
+import Chatbot from "./Components/Chatbot";
+import Suggestions from "./Pages/Suggestions";
 
 // Load Stripe for Payment
 const stripePromise = loadStripe("pk_test_51QQav9BpwYU6d9vY9KuwFyPMadLCTGnAlXZDaSXbfljBVARAtBpx3k5QavQvYRAEiZlOLUQkMxGqJmd3jdWOsWdx00uyIFTUwl");
@@ -58,12 +59,15 @@ const App = () => {
 
   return (
     <>
-     {/* Conditionally render AdminNavbar or Customer Navbar */}
-     {isAdminRoute ? (
+      {/* Conditionally render AdminNavbar or Customer Navbar */}
+      {isAdminRoute ? (
         <AdminNavbar />
       ) : (
         !hideCustomerNavbarRoutes.includes(location.pathname) && <Navbar />
       )}
+
+      {/* Chatbot - Floating Widget */}
+      <Chatbot />
 
       {/* Conditionally render the Floating Cart Button */}
       {location.pathname === "/courses" && <FloatingCartButton />}
@@ -89,8 +93,6 @@ const App = () => {
             </ProtectedRoute>
           }
         />
-
-        {/* Add this route inside the Admin Routes section*/}
         <Route
           path="/admin/manage-users"
           element={
@@ -99,7 +101,6 @@ const App = () => {
             </ProtectedRoute>
           }
         />
-
 
         {/* Customer Routes */}
         <Route
@@ -334,15 +335,43 @@ const App = () => {
             </ProtectedRoute>
           }
         />
+        <Route
+          path="/chatbot"
+          element={
+            <ProtectedRoute allowedRoles={["customer", "admin"]}>
+              <Chatbot />
+            </ProtectedRoute>
+          }
+        />
         <Route path="/courses" element={<HomePage />} />
-        <Route path="/cart" element={<ProtectedRoute allowedRoles={["customer"]}><CartPage /></ProtectedRoute>} />
-        <Route path="/checkout" element={<ProtectedRoute allowedRoles={["customer"]}><CheckoutPage /></ProtectedRoute>} />
-        <Route path="/confirmation" element={<ProtectedRoute allowedRoles={["customer"]}><ConfirmationPage /></ProtectedRoute>} />
-
+        <Route
+          path="/cart"
+          element={
+            <ProtectedRoute allowedRoles={["customer"]}>
+              <CartPage />
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/checkout"
+          element={
+            <ProtectedRoute allowedRoles={["customer"]}>
+              <CheckoutPage />
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/confirmation"
+          element={
+            <ProtectedRoute allowedRoles={["customer"]}>
+              <ConfirmationPage />
+            </ProtectedRoute>
+          }
+        />
       </Routes>
 
-       {/* Footer */}
-       {!hideFooterRoutes.includes(location.pathname) && <Footer />}
+      {/* Footer */}
+      {!hideFooterRoutes.includes(location.pathname) && <Footer />}
     </>
   );
 };

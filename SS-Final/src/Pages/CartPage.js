@@ -22,18 +22,33 @@ const CartPage = () => {
 
     return (
         <div className="container py-4">
-            <h1
-                className="text-center mb-5"
-                style={{
-                    fontWeight: 'bold',
-                    color: '#6a1b9a',
-                    fontFamily: "'Playfair Display', serif",
-                    fontSize: '2rem',
-                }}
-            >
-                Your Cart
-            </h1>
+            {/* Additional Header Section */}
+            <div className="mb-5">
+                <h1
+                    className="text-center"
+                    style={{
+                        fontWeight: 'bold',
+                        color: '#6a1b9a',
+                        fontFamily: "'Playfair Display', serif",
+                        fontSize: '2.5rem',
+                    }}
+                >
+                    Your Cart
+                </h1>
+                <p
+                    className="text-center"
+                    style={{
+                        color: '#6c757d',
+                        fontFamily: "'Open Sans', sans-serif",
+                        fontSize: '1.2rem',
+                        marginTop: '10px',
+                    }}
+                >
+                    This is the Cart Page where you can view your selected items.
+                </p>
+            </div>
 
+            {/* Main Cart Section */}
             {cart.length === 0 ? (
                 <div className="text-center">
                     <p
